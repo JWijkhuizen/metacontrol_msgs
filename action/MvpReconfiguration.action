@@ -5,8 +5,8 @@
 # int8 GENERAL_ERROR=-2
 
 # VALUES desired_configuration_name:
-# string LOW_POWER_CONFIGURATION_NAME=“low_power”
-# string STANDARD_CONFIGURATION_NAME=“standard”
+# low power and safe = “fd_navigate_safe” => "safe" launchfile argument
+# standard           = "standard"         => "standard" launchfile argument
 
 # goal
 string desired_configuration_name
