@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   actionlib_msgs
   message_generation
   std_msgs
+  diagnostic_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -56,11 +57,12 @@ add_message_files(
 )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  DIRECTORY
+      srv
+  FILES
+      QAPredictions.srv
+)
 
 ## Generate actions in the 'action' folder
 add_action_files(
@@ -75,6 +77,7 @@ generate_messages(
   DEPENDENCIES
     std_msgs  # Or other packages containing msgs
     actionlib_msgs
+    diagnostic_msgs
 )
 
 

@@ -1,0 +1,8 @@
+# The QA Predict service allows you to predict the QA values of other configurations
+
+# The name of the current configurations needs to be send
+# Returned are the configuration names and QA values of other configurations
+
+string current_config
+---
+diagnostic_msgs/KeyValue[] values
